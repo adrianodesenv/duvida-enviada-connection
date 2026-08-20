@@ -387,10 +387,6 @@
   </style>
 </head>
 <body>
-  <header class="banner">
-    <img src="assets/connection-banner.jpg" alt="Rare Care Connection" />
-  </header>
-
   <div class="page-intro">
     <h1>Dúvidas e comentários</h1>
     <p>Perguntas enviadas pelos participantes do Rare Care Connection</p>
@@ -400,7 +396,7 @@
     <div class="refresh-card">
       <label class="auto-refresh">
         <input type="checkbox" id="auto-refresh" checked />
-        Atualizar a cada 30s
+        Atualizar a cada 5s
       </label>
       <button type="button" class="btn-refresh" id="btn-refresh" aria-label="Atualizar lista">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -452,7 +448,7 @@
 
   <script>
     const API_URL = "https://connection.eventos-info.com.br/api/duvidas-aprovadas";
-    const REFRESH_INTERVAL_MS = 30_000;
+    const REFRESH_INTERVAL_MS = 5_000;
 
     let allQuestions = [];
     let refreshTimer = null;
